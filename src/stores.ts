@@ -95,5 +95,3 @@ export const WindowManager = {
         })
     }
 }
-
-export const alert = writable('Welcome to the to-do list app!')

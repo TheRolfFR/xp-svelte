@@ -1,10 +1,9 @@
 <script lang="ts">
   import Taskbar from './lib/Taskbar.svelte';
-  import { alert, WindowManager } from './stores';
+  import { WindowManager } from './stores';
 </script>
 
 <main on:click|self={WindowManager.closeStartMenu} on:keydown={() => {}}>
-  {$alert}
 </main>
 <Taskbar />
 
