@@ -5,7 +5,7 @@
 
 <div 
   id="start_button" class:opened={$WindowManager.start_menu_opened}
-  class="middle" on:click={WindowManager.toggleStartMenu} on:keydown={() => {}}
+  class="middle noselect" on:click={WindowManager.toggleStartMenu} on:keydown={() => {}}
 >
   <img src="https://therolf.fr/img/xp/wl.png" alt="xp" /><span id="start_button_text">
     start

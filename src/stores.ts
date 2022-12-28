@@ -1,4 +1,4 @@
-import { derived, writable, type Writable, get } from 'svelte/store'
+import { writable, type Writable, get } from 'svelte/store'
 
 export interface Window {
     title: string,

@@ -1,9 +1,14 @@
 <script>
   import SystemTray from './Components/SystemTray.svelte';
   import StartButton from './Components/StartButton.svelte';
+  import StartMenu from './Components/StartMenu.svelte';
+  import { WindowManager } from '../stores';
 </script>
 
 <div id="taskbar">
+  {#if $WindowManager.start_menu_opened}
+    <StartMenu />
+  {/if}
   <StartButton />
   <span class="spacer"></span>
   <SystemTray /> 
